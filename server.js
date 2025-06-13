@@ -1,7 +1,7 @@
 // Game Constants & Variables
 let direction = { x: 0, y: 0 };
 let inputDir = { x: 0, y: 0 };
-let speed = 5;
+let speed = 3;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [{ x: 13, y: 15 }];
@@ -53,7 +53,7 @@ function gameEngine() {
         snakeArr = [{ x: 13, y: 15 }];
         score = 0;
         scoreBox.innerHTML = "Score: " + score;
-        speed = 5;
+        speed = 3;
         musicSound.play();
     }
 
@@ -75,7 +75,7 @@ function gameEngine() {
         });
 
         // Increase speed slightly
-        speed += 0.2;
+        speed += 0.5;
 
         // Re-generate food
         let a = 2, b = 16;
